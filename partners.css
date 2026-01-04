@@ -1,0 +1,152 @@
+/* ====== Section ====== */
+
+.partners-section {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    background: linear-gradient(135deg, #1795de 0%, #11205de9 100%);
+    color: #ffffff;
+}
+
+@media (min-width: 1024px) {
+    .partners-section {
+        padding-top: 8rem;
+        padding-bottom: 8rem;
+    }
+}
+
+/* ====== Container ====== */
+
+.partners-container {
+    max-width: 80rem;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+@media (min-width: 640px) {
+    .partners-container {
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    .partners-container {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+}
+
+/* ====== Header ====== */
+
+.partners-header {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.partners-subtitle {
+    font-size: 1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: #f7f7f7;
+}
+
+.partners-title {
+    margin-top: 0.5rem;
+    font-size: 2.25rem;
+    font-weight: 800;
+    color: #ffffff;
+}
+
+@media (min-width: 640px) {
+    .partners-title {
+        font-size: 3rem;
+    }
+}
+
+.partners-description {
+    margin-top: 1rem;
+    color: #e8e8e8;
+    max-width: 32rem;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.6;
+}
+/* ====== Logo Loop Container ====== */
+.logo-loop {
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+    padding: 20px 0;
+    position: relative;
+    /* Professional fade effect on edges */
+    mask-image: linear-gradient(to right, transparent, black 15%, black 85%, transparent);
+    -webkit-mask-image: linear-gradient(to right, transparent, black 15%, black 85%, transparent);
+}
+
+/* ====== The Sliding Groups ====== */
+.group {
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+    /* The gap between images */
+    padding-right: 4rem;
+    /* Matching gap at the end of the group for a seamless loop */
+    flex-shrink: 0;
+    will-change: transform;
+    animation: scrolling 10s linear infinite;
+}
+
+.group img {
+    height: 55px;
+    width: auto;
+    object-fit: contain;
+}
+
+/* ====== Animation ====== */
+@keyframes scrolling {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        /* Move the entire group width out of view */
+        transform: translateX(-100%);
+    }
+}
+
+/* Pause on hover */
+.logo-loop:hover .group {
+    animation-play-state: paused;
+}
+
+
+
+
+/* Staggering for Partners Section Header */
+.partners-header .partners-subtitle {
+    animation-delay: 0.1s;
+}
+
+.partners-header .partners-title {
+    animation-delay: 0.3s;
+}
+
+.partners-header .partners-description {
+    animation-delay: 0.4s;
+}
+
+/* Staggering for the Logo Loop */
+.partners-section .logo-loop {
+    animation-delay: 0.4s;
+}
+
+/* Ensure the logo loop still shows its scrolling animation 
+   simultaneously with the reveal animation */
+.logo-loop.reveal-now .group {
+    /* This keeps your horizontal scroll running while the whole 
+       container fades in and slides up */
+    animation: scrolling 10s linear infinite;
+}

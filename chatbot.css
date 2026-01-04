@@ -1,0 +1,194 @@
+
+
+
+/*  */
+/* FROM HTML */
+/*  */
+
+            /* Chat Toggle Button */
+            #chat-toggle {
+                position: fixed;
+                bottom: 24px;
+                right: 24px;
+                width: 56px;
+                height: 56px;
+                background-color: #235C9A;
+                /* blue-600 */
+                color: white;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 24px;
+                cursor: pointer;
+                box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+                transition: all 0.3s ease;
+            }
+
+            #chat-toggle:hover {
+                background-color: rgb(29, 71, 186);
+                /* blue-700 */
+            }
+
+            /* Chat Window */
+            #chat-window {
+                position: fixed;
+                right: 24px;
+                bottom: 40px;
+                top: 100px;
+                width: 380px;
+                max-width: 90%;
+                margin-top: 20px;
+                background: white;
+                border-radius: 16px;
+                box-shadow: 0 20px 50px rgba(0, 0, 0, 0.25);
+                display: none;
+                flex-direction: column;
+                overflow: hidden;
+                border: 1px solid #235C9A;
+                z-index: 1000;
+            }
+
+
+
+            /* Header */
+            .chat-header {
+                background-color: #235C9A;
+                color: white;
+                padding: 16px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+            }
+
+            .chat-header-left {
+                display: flex;
+                align-items: center;
+                gap: 12px;
+            }
+
+            .chat-header img {
+                width: 40px;
+                height: 40px;
+                border-radius: 50%;
+                background: white;
+            }
+
+            .chat-header h3 {
+                margin: 0;
+                font-size: 18px;
+                font-weight: bold;
+            }
+
+            .chat-header p {
+                margin: 0;
+                font-size: 12px;
+                opacity: 0.9;
+            }
+
+            #close-chat {
+                cursor: pointer;
+                font-size: 22px;
+            }
+
+            /* Chat Area */
+            #chat-area {
+                height: 320px;
+                padding: 16px;
+                overflow-y: auto;
+                background-color: #f9fafb;
+            }
+
+            /* Options Section */
+            #options {
+                padding: 12px;
+                background: white;
+                border-top: 1px solid #e5e7eb;
+            }
+
+
+
+/*  */
+/* FROM JS */
+/*  */
+
+
+        .chat-row {
+            display: flex;
+            align-items: flex-start;
+            gap: 10px;
+            margin-bottom: 12px;
+        }
+
+        .chat-avatar {
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            background: white;
+        }
+
+        .chat-bubble {
+            padding: 10px 14px;
+            border-radius: 14px;
+            max-width: 75%;
+            font-size: 14px;
+        }
+
+        .chat-bubble.bot {
+            background: #e5e7eb;
+            color: #111;
+        }
+
+        .chat-bubble.user {
+            background: #1f5187;
+            color: white;
+            margin-left: auto;
+        }
+
+        .option-btn {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 8px;
+            border-radius: 12px;
+            border: none;
+            background: #f3f4f6;
+            cursor: pointer;
+            text-align: left;
+        }
+
+        .option-btn:hover {
+            background: #e5e7eb;
+        }
+
+        .option-btn-blue {
+            background: #eff6ff;
+            color: #2563eb;
+            font-weight: 500;
+        }
+
+        .option-btn-blue:hover {
+            background: #dbeafe;
+        }
+
+        .option-btn-back {
+            text-align: center;
+            background: #e5e7eb;
+        }
+
+        .typing-indicator {
+            font-size: 13px;
+            opacity: 0.7;
+            margin-top: 6px;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(10px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }

@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- UPDATED: Title reflects "Chuze IT Solutions" -->
+    <title>Chuze IT Solutions - Smart Solutions. Your Choice.</title>
+    <link rel="icon" type="jpeg" href="./src/ChuzeIT-fevicon-3.png">
+    <!-- Load Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./custom.css">
+    <link rel="stylesheet" href="./header.css">
+    <link rel="stylesheet" href="./hero.css">
+    <link rel="stylesheet" href="./partners.css">
+    <link rel="stylesheet" href="./contact.css">
+    <link rel="stylesheet" href="./chatbot.css">
+    <link rel="stylesheet" href="./services.css">
+    <link rel="stylesheet" href="./about.css">
+    <link rel="stylesheet" href="./footer.css">
+</head>
+
+
+    <script>
+       
+    </script>
+
+
+
+
+<body class="bg-gray-50 text-gray-800">
+
+    
+
+    <!-- Header & Navigation -->
+
+    <!-- <div class="top-header-contact-container">
+        <div class="header-contace-phoneSec">
+            <a href="https://wa.me/917893081919" target="_blank">
+                <img src="./src/whatsapp_logo_Dark.png">
+                <p>+91 7893081919</p>
+            </a>
+    
+        </div>
+    
+        <div class="header-contace-mailSec">
+            <a href="mailto:info@chuzeit.com" target="_blank">
+                <img src="./src/mail-svg.svg">
+                <p>info@chuzeit.com</p>
+            </a>
+            
+        </div>
+    </div> -->
+
+
+
+
+    <!-- ChatBot -->
+
+    <!-- Chatbot Floating Button -->
+    <audio id="msgSound" preload="auto">
+        <source src="./src/mixkit-soap-bubble-sound-2925.wav" type="audio/mpeg">
+    </audio>
+    <!-- Chat Toggle Button -->
+    <div id="chat-toggle">💬</div>
+
+    <!-- Chatbot Window -->
+    <div id="chat-window">
+
+        <!-- Header -->
+        <div class="chat-header">
+            <div class="chat-header-left">
+                <img src="./src/ChuzeIT-chatbot-profile-img-2.png" alt="Bot" />
+                <div>
+                    <h3>ChuzeIT Assistant</h3>
+                    <p>Helping you explore ChuzeIT</p>
+                </div>
+            </div>
+            <span id="close-chat">×</span>
+        </div>
+
+        <!-- Chat Area -->
+        <div id="chat-area"></div>
+
+        <!-- Options Section -->
+        <div id="options"></div>
+
+    </div>
+
+
+    <!-- Header Section -->
+    <header class="site-header">
+    
+        <div class="header-wrapper">
+            <div class="header-row">
+    
+                <!-- Logo -->
+                <div class="header-logo">
+                    <a href="#">
+                        <!-- <img src="./src/ChuzeIT-logo-noBG(2).png" alt="ChuzeIT Logo" class="headerLogo"> -->
+                        <img src="./src/ChuzeIT-horizontal-Logo.png" alt="ChuzeIT Logo" class="headerLogo">
+                    </a>
+                </div>
+    
+                <!-- Desktop Navigation -->
+                <nav class="header-nav">
+                    <a href="#services">Services</a>
+                    <a href="#partners">Partners</a>
+                    <a href="#about">About Us</a>
+                </nav>
+    
+                <!-- CTA -->
+                <a href="#contact" class="header-cta">
+                    Get In Touch
+                </a>
+    
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-button" class="mobile-button" aria-expanded="false" aria-controls="mobile-menu">
+                    <img class="hamburger-menu-logo" src="./src/hamburger-menu-svgrepo-com.png" alt="Open navigation menu">
+                </button>
+    
+            </div>
+        </div>
+    
+        <!-- Mobile Menu -->
+            
+            <div id="mobile-menu" class="mobile-menu" aria-hidden="true">
+                <a href="#services">Services</a>
+                <a href="#partners">Partners</a>
+                <a href="#about">About</a>
+                <a href="#contact" id="mobile-cta" class="mobile-cta">Get In Touch</a>
+            </div>
+
+        
+    
+    </header>   
+
+    <!-- Hero Section -->
+    <div className="min-h-screen w-full relative">
+        <!-- {/* Radial Gradient Background from Bottom */} -->
+        <div className="hero-background absolute inset-0 z-0" style="
+            background: radial-gradient(125% 125% at 50% 90%, #fff 40%, #0a49a1 100%)">
+
+            
+        <!-- {/* Your Content/Components */}      -->
+        <section class="hero-section">
+
+
+        <div class="hero-container">
+
+            <h1 class="hero-title">
+                <span class="line-1">Smart Solutions.</span>
+            </h1>
+
+            <h1 class="hero-title">
+                <span class="line-2">Your Choice for IT Excellence.</span>
+            </h1>
+
+            <p class="hero-subtext">
+                We empower businesses with expert cloud migration, advanced cybersecurity, and agile
+                application development to stay ahead in a digital-first world.
+            </p>
+
+            <div class="hero-buttons">
+                <a href="#services" class="btn-primary">Explore Our Services</a>
+                <a href="#contact" class="btn-secondary">Get a Free Consultation</a>
+            </div>
+        </div>
+
+
+        
+        <div class="hero-container-image">
+            <img class="hero-image" src="./src/Cloud-migration-img-2-noBg.png">
+        </div>
+
+        </section>
+    </div>
+
+
+    <section id="services" class="services-section">
+        <div class="container">
+
+            <div class="section-header">
+                <p class="autoShow subtitle">WHAT WE DO</p>
+                <h2 class="autoShow title">
+                    Comprehensive IT Expertise
+                </h2>
+            </div>
+
+            <div class="services-grid">
+
+                <div class="autoShow service-card accent-teal">
+                    <div class="icon-wrapper bg-teal-light text-teal">
+                        <svg class="icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 10-9.78 2.096A4.001 4.001 0 003 15z" />
+                        </svg>
+                    </div>
+                    <h3 class="card-title">Cloud Transformation</h3>
+                    <p class="card-text">Seamless migration and management for AWS, Azure, and GCP, maximizing scalability
+                        and efficiency.</p>
+                </div>
+
+                <div class="autoShow service-card accent-orange">
+                    <div class="icon-wrapper bg-orange-light text-orange">
+                        <svg class="icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
+                        </svg>
+                    </div>
+                    <h3 class="card-title">Cybersecurity</h3>
+                    <p class="card-text">Proactive threat detection, vulnerability assessment, and compliance management to
+                        protect your assets.</p>
+                </div>
+
+                <div class="autoShow service-card accent-teal">
+                    <div class="icon-wrapper bg-teal-light text-teal">
+                        <svg class="icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
+                        </svg>
+                    </div>
+                    <h3 class="card-title">DevOps & Apps</h3>
+                    <p class="card-text">Accelerate time-to-market with modern CI/CD pipelines and custom, scalable
+                        application development.</p>
+                </div>
+
+                <div class="autoShow service-card accent-orange">
+                    <div class="icon-wrapper bg-orange-light text-orange">
+                        <svg class="icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 7v10m0 0h16m0 0V7m0 10l-2-2m2 2l-2 2m-4-6h.01M7 12h.01M10 12h.01M13 12h.01M16 12h.01" />
+                        </svg>
+                    </div>
+                    <h3 class="card-title">Data & AI Strategy</h3>
+                    <p class="card-text">Unlocking actionable insights through big data engineering and integrating ethical,
+                        powerful AI models.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Technology Partners Section -->
+    <section id="partners" class="partners-section">
+        <div class="partners-container">
+            <div class="partners-header">
+                <p class="autoShow partners-subtitle">TRUSTED ALLIANCES</p>
+    
+                <h2 class="autoShow partners-title">
+                    Our Premier Technology Partners
+                </h2>
+    
+                <p class="autoShow partners-description">
+                    We leverage industry-leading platforms and tools to build robust, scalable, and future-proof
+                    solutions for your business.
+                </p>
+            </div>
+        </div>
+    
+        <div class="autoShow logo-loop">
+            <div class="group">
+                <img src="./src/microsoft-logo.png" />
+                <img src="./src/aws-logo.png" />
+                <img src="./src/Google_Cloud_Platform-Logo.png" />
+                <img src="./src/Red_Hat-Logo.png" />
+                <img src="./src/Zoho_Corporation-Logo.png" />
+                <img src="./src/Acronis-Logo.png" />
+                <img src="./src/veeam-logo.png" />
+                <img src="./src/Kaspersky-logo.png" />
+            </div>
+    
+            <div aria-hidden="true" class="group">
+                <img src="./src/microsoft-logo.png" />
+                <img src="./src/aws-logo.png" />
+                <img src="./src/Google_Cloud_Platform-Logo.png" />
+                <img src="./src/Red_Hat-Logo.png" />
+                <img src="./src/Zoho_Corporation-Logo.png" />
+                <img src="./src/Acronis-Logo.png" />
+                <img src="./src/veeam-logo.png" />
+                <img src="./src/Kaspersky-logo.png" />
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- About/Why Choose Us Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="grid-layout">
+    
+                <div class="autoShow content-column">
+                    <p class="subtitle">THE CHUZE IT SOLUTIONS ADVANTAGE</p>
+                    <h2 class="main-heading">Why Partner with a Forward-Thinking Team</h2>
+                    <p class="description">
+                        We don't just fix problems; we engineer growth. Our consultants combine deep technical knowledge
+                        with strategic business insight to deliver measurable outcomes.
+                    </p>
+                    <div class="cta-wrapper">
+                        <a href="#contact" class="btn-primary-blue">
+                            Discuss Your Strategy
+                        </a>
+                    </div>
+                </div>
+    
+                <div class="features-column">
+    
+                    <div class="autoShow feature-item">
+                        <div class="icon-wrapper">
+                            <svg class="icon icon-green" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                            </svg>
+                        </div>
+                        <div class="feature-text">
+                            <h3 class="feature-title">Agile & Iterative Delivery</h3>
+                            <p class="feature-desc">We use modern methodologies to deliver value faster and adapt to
+                                changing requirements seamlessly.</p>
+                        </div>
+                    </div>
+    
+                    <div class="autoShow feature-item">
+                        <div class="icon-wrapper">
+                            <svg class="icon icon-teal" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M21 12a9 9 0 01-9 9m-9-9a9 9 0 019-9m-9 9h.01M5.999 12h.01" />
+                            </svg>
+                        </div>
+                        <div class="feature-text">
+                            <h3 class="feature-title">Security-First Approach</h3>
+                            <p class="feature-desc">Every solution is built with robust security protocols baked in from the
+                                foundation up, not as an afterthought.</p>
+                        </div>
+                    </div>
+    
+                    <div class="autoShow feature-item">
+                        <div class="icon-wrapper">
+                            <svg class="icon icon-orange" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M13 10V3L4 14h7v7l9-11h-7z" />
+                            </svg>
+                        </div>
+                        <div class="feature-text">
+                            <h3 class="feature-title">24/7 Global Support</h3>
+                            <p class="feature-desc">Our dedicated team provides round-the-clock technical support, ensuring
+                                maximum uptime and peace of mind.</p>
+                        </div>
+                    </div>
+    
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- REVERTED: Contact Us Section (Form) - Teal/Cyan Background -->
+    <section id="contact" class="contact-section">
+        <div class="contact-container">
+    
+            <div class="contact-header">
+                <p class="autoShow contact-subtitle">GET IN TOUCH</p>
+                <h2 class="autoShow contact-title">Start Your Project Consultation</h2>
+                <p class="autoShow contact-description">
+                    Fill out the form below and one of our specialists will reach out within 24 hours.
+                </p>
+            </div>
+    
+            <div class="autoShow contact-card">
+                <form action="https://formspree.io/f/xeorpley" method="POST" id="inquiryForm" class="contact-form">
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label for="name" class="form-label">Full Name *</label>
+                            <input type="text" id="name" name="name" required class="form-input">
+                        </div>
+                        <div class="form-group">
+                            <label for="email" class="form-label">Work Email *</label>
+                            <input type="email" id="email" name="email" required class="form-input">
+                        </div>
+                    </div>
+    
+                    <div class="form-group">
+                        <label for="subject" class="form-label">Subject / Area of Interest *</label>
+                        <input type="text" id="subject" name="subject" required class="form-input">
+                    </div>
+    
+                    <div class="form-group">
+                        <label for="message" class="form-label">Your Message *</label>
+                        <textarea id="message" name="message" rows="4" required class="form-input"></textarea>
+                    </div>
+    
+                    <div id="formStatus" role="status" class="form-status" aria-live="polite"></div>
+    
+                    <button type="submit" id="submitButton" class="form-submit">
+                        Submit Inquiry
+                    </button>
+                </form>
+            </div>
+    
+        </div>
+    </section>
+
+
+
+
+    <!-- Footer -->
+
+    <footer class="main-footer">
+        <div class="footer-container">
+            <div class="footer-grid">
+                <div class="footer-col-wide">
+                    <h3 class="footer-logo-text">Chuze IT Solutions</h3>
+                    <p class="copyright-text">&copy; 2025 Chuze IT Solutions. All rights reserved.</p>
+                </div>
+    
+                <div class="footer-col">
+                    <h4 class="footer-heading">Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#partners">Partners</a></li>
+                        <li><a href="#about">Company</a></li>
+                        <li><a href="#contact">Get in touch</a></li>
+                    </ul>
+                </div>
+    
+                <div class="footer-col">
+                    <h4 class="footer-heading">Contact</h4>
+                    <ul class="footer-links contact-list">
+                        <li>
+                            <a href="mailto:info@chuzeit.com" target="_blank">
+                                <img src="./src/mail-open-logo.png" alt="Email">
+                                info@chuzeit.com
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://wa.me/917893081919" target="_blank">
+                                <img src="./src/whatsapp_logo_Light.png" alt="WhatsApp">
+                                +91 7893081919
+                            </a>
+                        </li>
+                        <li>
+                            <div class="location-wrapper">
+                                <img src="./src/location-pin-logo.png" class="location-icon">
+                                <span class="location-text">
+                                    Street No. 8, Habsiguda, Hyderabad, Telangana, India - 500007
+                                </span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="location-wrapper">
+                                <img src="./src/location-pin-logo.png" class="location-icon">
+                                <span class="location-text">
+                                    Office #10, Beside Bigmart, Sanayyiya, Beda Zayed Al Dhafra Region, Abu Dhabi - U.A.E
+                                </span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+    
+                <div class="footer-col-wide">
+                    <h4 class="footer-heading">Social Media</h4>
+                    <div class="social-icons">
+                        <a href="" target="_blank"> <img src="./src/instagram-svg.svg" class="footerSocialMedia-logo"> </a>
+                        <a href="https://www.linkedin.com/company/chuze-it-solutions/" target="_blank"> <img
+                                src="./src/linkedin-svg.svg" class="footerSocialMedia-logo"> </a>
+                        <a href="https://x.com/chuze_it" target="_blank">
+                            <svg class="footerSocialMedia-logo" viewBox="0 0 24 24" aria-hidden="true">
+                                <g>
+                                    <path fill="#D1D1D1"
+                                        d="M21.742 21.75l-7.563-11.179 7.056-8.321h-2.456l-5.691 6.714-4.54-6.714H2.359l7.29 10.776L2.25 21.75h2.456l6.035-7.118 4.818 7.118h6.191-.008zM7.739 3.818L18.81 20.182h-2.447L5.29 3.818h2.447z">
+                                    </path>
+                                </g>
+                            </svg>
+                        </a>
+                    </div>
+                    <!-- <div class="location-wrapper">
+                        <img src="./src/location-pin-logo.png" class="location-icon">
+                        <span class="location-text">
+                            Street No. 8, Habsiguda, Hyderabad, Telangana, India - 500007
+                        </span>
+                    </div> -->
+                </div>
+            </div>
+    
+            <div class="back-to-top-wrapper">
+                <a href="#" class="back-to-top">
+                    <svg class="up-arrow" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M5 10l7-7m0 0l7 7m-7-7v18" />
+                    </svg>
+                    Back to Top
+                </a>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+    <!--  -->
+    <!--  -->
+    <!--  -->
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const btn = document.getElementById("mobile-menu-button");
+            const menu = document.getElementById("mobile-menu");
+
+            if (!btn || !menu) return;  
+
+            btn.addEventListener("click", () => {
+                const isOpen = menu.classList.toggle("open");
+                btn.setAttribute("aria-expanded", isOpen ? "true" : "false");
+                menu.setAttribute("aria-hidden", isOpen ? "false" : "true");
+            });
+
+            // Optional: close menu when a link is clicked (on mobile)
+            const links = menu.querySelectorAll("a");
+            links.forEach(link => {
+                link.addEventListener("click", () => {
+                    if (menu.classList.contains("open")) {
+                        menu.classList.remove("open");
+                        btn.setAttribute("aria-expanded", "false");
+                        menu.setAttribute("aria-hidden", "true");
+                    }
+                });
+            });
+        });
+    </script>
+
+    <!--  -->
+    <!--  -->
+    <!--  -->
+
+
+
+    <script src="./index.js"></script>
+    <script src="./chatbot.js"></script>
+
+    <script>
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                // If the card is visible on screen
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('reveal-now');
+                    // This ensures it only animates ONCE
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.1 }); // Trigger when 10% of the card is visible
+
+        // Tell the observer to watch all your .autoShow elements
+        document.querySelectorAll('.autoShow').forEach(card => {
+            observer.observe(card);
+        });
+    </script>
+</body>
+
+</html>

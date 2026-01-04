@@ -1,0 +1,197 @@
+
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/* ----  HEADER --- */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+
+
+
+
+
+
+.footerSocialMedia-logo{
+    width:28px;
+}
+
+.partners-logo{
+    /* min-height: 30px; */
+    max-height: 70px;
+    max-width: 130px;
+}
+
+
+.partner-section{
+    width:auto;
+    
+}
+
+@media (min-width:1024) and (max-width:1200px){
+    .partners-logos-section{
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+}
+
+
+
+
+
+.footer-contact-logos img{
+    display: inline-block;
+    width: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+.small-btn {
+    padding: 6px 12px;
+    font-size: 0.85rem;
+    border-radius: 6px;
+}
+
+
+#mobile-menu {
+    transition: all 0.3s ease-in-out;
+}
+
+#mobile-menu.hidden {
+    opacity: 0;
+    transform: translateY(-10px);
+    pointer-events: none;
+}
+
+#mobile-menu:not(.hidden) {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+
+.hamburger-menu-logo{
+    width: 30px;
+}
+
+
+/* ChatBot */
+
+.chatbot-bubble {
+    max-width: 80%;
+    padding: 10px 14px;
+    margin: 8px 0;
+    border-radius: 12px;
+    line-height: 1.4;
+    animation: fadeInUp 0.25s ease-out;
+}
+
+.bot {
+    background: #e9f3ff;
+    color: #1f2b50;
+    border-top-left-radius: 0;
+}
+
+.user {
+    background: #d7f8ff;
+    color: #07485b;
+    margin-left: auto;
+    border-top-right-radius: 0;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(6px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+#chat-window,
+#chat-toggle {
+    z-index: 9999 !important;
+}
+
+
+/*  */
+        .chat-row {
+            display: flex;
+            align-items: flex-start;
+            margin: 8px 0;
+        }
+    
+        .chat-avatar {
+            width: 32px;
+            height: 32px;
+            margin-right: 8px;
+        }
+    
+        .chatbot-bubble {
+            max-width: 80%;
+            padding: 10px 14px;
+            border-radius: 12px;
+            background: #e9f3ff;
+            line-height: 1.4;
+            animation: fadeInUp 0.25s ease-out;
+        }
+    
+        .user {
+            background: #d7f8ff;
+            margin-left: auto;
+            border-top-right-radius: 0;
+        }
+    
+        .bot {
+            background: #e9f3ff;
+            border-top-left-radius: 0;
+        }
+    
+        .typing-indicator {
+            display: inline-block;
+            padding: 8px 12px;
+            background: #e9f3ff;
+            border-radius: 12px;
+            font-size: 13px;
+            opacity: 0.7;
+            animation: pulse 1s infinite;
+        }
+    
+        @keyframes pulse {
+            0% {
+                opacity: 0.4;
+            }
+    
+            50% {
+                opacity: 1;
+            }
+    
+            100% {
+                opacity: 0.4;
+            }
+        }
+/*  */
